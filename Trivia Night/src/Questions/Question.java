@@ -2,7 +2,7 @@ package Questions;
 
 import Flashcards.Card;
 import Operations.CardType;
-import org.jetbrains.annotations.NotNull;
+
 
 
 
@@ -34,7 +34,7 @@ public abstract class Question extends Card
 
     //when user selects an answer, the object's getter will be used to pass the answer into this method.
     //the boolean is passed to the Operations.UI which will display if correct or not.
-    public boolean check(@NotNull String answer)
+    public boolean check(String answer)
     {
         return this.correctAnswer.equals(answer.toLowerCase());
     }

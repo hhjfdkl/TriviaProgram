@@ -1,14 +1,19 @@
-Variable:Something used for storing data for manipulation and usage later in a program:int x; String y; double[] z;
-Comment:Something that the compiler ignores, used for developers to leave human-readable messages:// or /* */
-Primitive data type:Something that consumes a fixed amount of memory:42, true, 'a'
-Reference data type:Something that stores complex data, and so it can consume a variable amount of memory:String, object, class, array
-Constant:Similar to a variable, but its value cannot be changed. In Java, the compiler is notified by declaring it 'final':final double CA_SALES_TAX_RATE = 7.25;
-Magic number:A number used in code that doesn't have a syntactically clear meaning - this should be replaced with a constant to communicate purpose:total=(17.20*26*80-75-26)*0.77*0.80;
-Widen:Converting a smaller data type to a larger data type:Converting int to long, or a byte to int
-Narrow:Converting a larger data type to a smaller data type:Converting long to int, or int to byte
-Overflow:A datatype "rolling over" to the minimum value due to a conversion:A conversion an int 132 to a byte and getting -124
-Truncation:A loss of value due to converting decimals, such as converting a double to an integer:A conversion of a double 1.135 to an int and getting 1
-Type Coercion:The process of automatic or implicit conversion of values from one data type to another:int x = 1; String y = "Hello world! I am a useless program!! " + x; (This causes x to become part of the string)
-Literal suffix:Something used to avoid compiler errors due to default data types. For instance, you may use this to change a number without a decimal to a long rather than an int:normalTemp = 98.6F; populationIn2020 = 7800000000L;
-Expression:A combination of literals, variables, operators, and function calls that produce a single value when evaluated:double x = 200/650;
-Method:A section of code defined within object classes that break up programs into small, repeatable units of code. These are actions a class's objects can perform:public class Test { public void helloWorld(){ System.out.println("Hello world! I am a useless program!"); } }
+The CIA Triad:the three principles of security control and management:Confidentiality; Integrity; Availability
+Confidentiality:The fundamental security goal of keeping information and communications private and protecting them from unauthorized access:"Authorization is required for access!"
+Integrity:The fundamental security goal of keeping organizational information accurate, free of errors, and without unauthorized modifications:"This is a true and legitimate representation of my intentions, and it has NEVER been tampered with!"
+Availability:The fundamental security goal of ensuring that computer systems operate continuously and that authorized persons can access data that they need:"If I SHOULD be able to access it, I CAN access it!"
+Non-repudiation:The security goal of ensuring that the party that sent a transmission or created data remains associated with that data and cannot deny sending or creating that data:"You can't deny you did anything on MY network!"
+NIST:The organization that develops computer security standards and is used by US federal agencies and publishes cybersecurity best practice guides and research:The organization that develops computer security standards and is used by US federal agencies and publishes cybersecurity best practice guides and research
+CSF:A collection of standards, best practices, and guidelines for effective security risk management. It can be general or cater to specific industries.:A framework that you use to enforce your cybersecurity policies
+Security Controls:A technology or procedure put in place to mitigate vulnerabilities and risk and to ensure the confidentiality, integrity, and availability of information:A technology or procedure put in place to mitigate vulnerabilities and risk and to ensure the confidentiality, integrity, and availability of information
+Gap analysis:A way to measure the difference between current and desired states of our security in order to help assess the scope of work included in a security project:The way to identify the window between our security procedures and how we are actually implementing those features
+IAM:A security process that provides identification, authentication, and authorization mechanisms for entities that have access to our networks, systems, and applications:a program like Okta, Oracle, or SailPoint which monitors permissions within an organization.
+Identification:The process by which a user account (and its credentials) is issued to the correct person. Sometimes referred to as enrollment:Provisioning; a user is provisioned proper access after the _____ process
+Authentication:A method of validating a particular entity's or individual's unique credentials:"If you aren't able to get _____ you won't be able to get access!"
+Accounting:Tracking authorized usage of a resource or use of rights by a subject and alerting when unauthorized use is detected or attempted:The process of logging actions encompassed by
+AAA:A security concept where a centralized platform verifies subject identification, ensures the subject is assigned relevant permissions, and then logs these actions to create an audit trail:"Once we know who you are, you have to be allowed in, and once you're allowed in, we're always watching you"
+Security Control:A technology or procedure put in place to mitigate vulnerabilities and risk and to ensure the confidentiality, integrity, and availability of information:Requiring MFA via company policy is an example of
+Managerial Control:The control gives oversight of the information system. Examples could include risk identification or a tool allowing the evaluation and selection of other security controls:A security control that gives oversight
+Operational Control:A category of security control that is implemented by people:Phishing awareness training
+Technical Control:The control is implemented as a system to prevent breach:A control which uses things like firewalls and antivirus
+Physical:A security control that physically prevents or physically notifies us of breaches:A control such as an alarm, a gateway, a lock, room lighting, a security camera, or a security guard

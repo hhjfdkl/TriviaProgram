@@ -121,8 +121,9 @@ public class Dealer implements HasDice
     private CardType getCardType()
     {
         int roll = roll(SIX_SIDED_DIE);
-        if(roll==5)
-            return CardType.TYPE_IN;
+//Type in is admittedly terrible, so we're commenting this out for now.
+//        if(roll==5)
+//            return CardType.TYPE_IN;
         if(roll==4)
             return CardType.TRUE_OR_FALSE;
         return CardType.QUIZ;
